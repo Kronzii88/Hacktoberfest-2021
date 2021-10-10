@@ -8,6 +8,7 @@
   <title>Hacktoberfest 2021 Contributors</title>
   <link rel="shortcut icon" href="img/favicon/logo-hacktoberfest-full.f42e3b1.svg" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -41,7 +42,44 @@
           </div>
         </div>
       </div>
+	  <div class="contributors-card">
+        <!-- Header Background -->
+        <!-- Change with your avatar url / image -->
+        <div class="card-header-background" style="background-image: url('img/custom-avatar-images/minion.jpg')">
+        </div>
+        <div class="card-content">
+          <div class="picture">
+            <!-- Change with your avatar url / image -->
+            <!-- Better Square Image / 1:1 Aspect Ratio -->
+            <img class="img-fluid" src="https://avatars.githubusercontent.com/u/37778401?v=4">
+          </div>
+          <div class="contributors-content">
+            <!-- Change with your name -->
+            <h3 class="name">Dipta Harimbawa</h3>
+            <!-- Change with your role -->
+            <h4 class="role">Lamer</h4>
+          </div>
+        </div>
+      </div>
+    </div>
       <!-- End -->
+	  
+	  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	  <script>
+		$(document).ready(() => {
+			Swal.fire({
+				title: '<strong>Hey Wazzap!</strong>',
+				icon: 'info',
+				text:
+					'How are u today?',
+				focusConfirm: false,
+				confirmButtonText:
+					'<i class="fa fa-thumbs-up"></i> Great!',
+				confirmButtonAriaLabel: 'Thumbs up, great!',
+			})
+		
+		})
+	  </script>
 </body>
 
 
